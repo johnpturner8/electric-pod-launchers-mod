@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<SetTargetChargeLevel>Set power usage to {0} W</SetTargetChargeLevel>
+<CommandSetTargetChargeLevel>Set power usage</CommandSetTargetChargeLevel>
+<CommandSetTargetChargeLevelDesc>Set the power usage of this device, which will then draw the specified wattage.</CommandSetTargetChargeLevelDesc>
+</LanguageData>
