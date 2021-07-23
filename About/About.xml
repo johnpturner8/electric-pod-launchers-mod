@@ -7,4 +7,12 @@
         <li>1.3</li>
     </supportedVersions>
     <description>This mod adds drop pod launchers that can be charged with electricity. Electric pod launchers are more energy efficient than normal launchers and can be charged without using chemfuel. These benefits come with tradeoffs, increased construction cost, electricity infrastructure needed to charge, the risk of breakdowns, and the time taken to charge.</description>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
 </ModMetaData>

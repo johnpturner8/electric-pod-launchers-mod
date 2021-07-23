@@ -15,7 +15,6 @@ namespace ElectricPodLauncher
 		public override void TickRare()
 		{
 			float powerConsumption = this.TryGetComp<PBL_Chargeable>().powerConsumption;
-			//this.TryGetComp<CompPowerTrader>().Props.basePowerConsumption = powerConsumption;
 			if (this.TryGetComp<CompPowerTrader>().PowerOn)
 			{
 				this.TryGetComp<CompPowerTrader>().PowerOutput = -1 * powerConsumption;

@@ -37,42 +37,16 @@ namespace ElectricPodLauncher
             }
         }
 
-        //public float TargetPowerLevel
-        //{
-        //    get
-        //    {
-        //        if (this.configuredTargetPowerLevel >= 0f)
-        //        {
-        //            return this.configuredTargetPowerLevel;
-        //        }
-        //        if (this.Props.targetFuelLevelConfigurable)
-        //        {
-        //            return this.Props.initialConfigurableTargetFuelLevel;
-        //        }
-        //        return this.Props.fuelCapacity;
-        //    }
-        //    set
-        //    {
-        //        this.configuredTargetPowerLevel = Mathf.Clamp(value, 0f, this.Props.fuelCapacity);
-        //    }
-        //}
-
         public PBL_ChargeableProperties Props => (PBL_ChargeableProperties)this.props;
 
-        //public float chargePerTick => Props.chargePerTick;
-
         public float powerConsumption = 100f;
-        //public float powerConsumption => Props.powerConsumption;
         public float maxPowerConsumption => Props.maxPowerConsumption;
 
         private static readonly Texture2D SetTargetPowerLevelCommand = ContentFinder<Texture2D>.Get("SetPower", true);
-
-        //private float configuredTargetPowerLevel = -1f;
     }
 
     public class PBL_ChargeableProperties : CompProperties
     {
-        //public float chargePerTick;
         public float maxPowerConsumption;
 
         public PBL_ChargeableProperties()
