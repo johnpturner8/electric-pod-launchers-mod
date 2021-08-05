@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Electric Drop Pods\Assemblies\ElectricPodLauncher.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Electric Drop Pods\Source\ElectricPodLauncher\ElectricPodLauncher\obj\Debug\ElectricPodLauncher.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Electric Drop Pods\Source\ElectricPodLauncher\ElectricPodLauncher\obj\Debug\ElectricPodLauncher.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Electric Drop Pods\Source\ElectricPodLauncher\ElectricPodLauncher\obj\Debug\ElectricPodLauncher.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Electric Drop Pods\1.2\Source\ElectricPodLauncher\ElectricPodLauncher\obj\Debug\ElectricPodLauncher.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Electric Drop Pods\1.2\Source\ElectricPodLauncher\ElectricPodLauncher\obj\Debug\ElectricPodLauncher.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Electric Drop Pods\1.2\Source\ElectricPodLauncher\ElectricPodLauncher\obj\Debug\ElectricPodLauncher.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Electric Drop Pods\1.2\Assemblies\ElectricPodLauncher.dll
