@@ -14,6 +14,7 @@ namespace ElectricPodLauncher
     {
 		public override void TickRare()
 		{
+			//Debug.Log("Running 1.3");
 			float powerConsumption = this.TryGetComp<PBL_Chargeable>().powerConsumption;
 			if (this.TryGetComp<CompPowerTrader>().PowerOn)
 			{
