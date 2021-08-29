@@ -32,7 +32,7 @@
       <Steel>50</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
-    <tickerType>Rare</tickerType>
+    <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Refuelable">
         <fuelCapacity>150.0</fuelCapacity>
@@ -51,11 +51,11 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>100</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="ElectricPodLauncher.PBL_ChargeableProperties">
+        <minPowerConsumption>100</minPowerConsumption>
         <maxPowerConsumption>3600</maxPowerConsumption>
       </li>
     </comps>

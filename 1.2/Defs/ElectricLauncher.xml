@@ -32,7 +32,7 @@
       <Steel>50</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
-    <tickerType>Rare</tickerType>
+    <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Refuelable">
         <fuelCapacity>150.0</fuelCapacity>

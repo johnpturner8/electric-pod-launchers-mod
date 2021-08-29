@@ -12,14 +12,14 @@ namespace ElectricPodLauncher
 {
     public class PBL_ElectricPodLauncher : Building
     {
-		public override void TickRare()
+		public override void Tick()
 		{
 			Debug.Log("Running 1.2");
 			float powerConsumption = this.TryGetComp<PBL_Chargeable>().powerConsumption;
+			this.TryGetComp<CompPowerTrader>().PowerOutput = -1 * powerConsumption;
 			if (this.TryGetComp<CompPowerTrader>().PowerOn)
 			{
-				this.TryGetComp<CompPowerTrader>().PowerOutput = -1 * powerConsumption;
-				this.TryGetComp<CompRefuelable>().Refuel(chargePerTick * (powerConsumption / 1000));
+				this.TryGetComp<CompRefuelable>().Refuel(chargePerTick * (powerConsumption / 1000 / 1000));
 			}
 		}
 		

@@ -37,6 +37,13 @@ namespace ElectricPodLauncher
             }
         }
 
+        //Saves power consumption settings
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Values.Look<float>(ref this.powerConsumption, "powerConsumption");
+        }
+
         public PBL_ChargeableProperties Props => (PBL_ChargeableProperties)this.props;
 
         public float powerConsumption = 100f;

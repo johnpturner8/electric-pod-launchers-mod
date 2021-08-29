@@ -33,13 +33,22 @@ namespace ElectricPodLauncher
             }
             set
             {
-                this.powerConsumption = Mathf.Clamp(value, 0f, Props.maxPowerConsumption);
+                this.powerConsumption = Mathf.Clamp(value, Props.minPowerConsumption, Props.maxPowerConsumption);
             }
+        }
+
+        //Saves power consumption settings
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Values.Look<float>(ref this.powerConsumption, "powerConsumption");
         }
 
         public PBL_ChargeableProperties Props => (PBL_ChargeableProperties)this.props;
 
-        public float powerConsumption = 100f;
+        private float powerConsumption = 100f;
+
+        public float minPowerConsumption => Props.minPowerConsumption;
         public float maxPowerConsumption => Props.maxPowerConsumption;
 
         private static readonly Texture2D SetTargetPowerLevelCommand = ContentFinder<Texture2D>.Get("SetPower", true);
@@ -47,6 +56,7 @@ namespace ElectricPodLauncher
 
     public class PBL_ChargeableProperties : CompProperties
     {
+        public float minPowerConsumption;
         public float maxPowerConsumption;
 
         public PBL_ChargeableProperties()
