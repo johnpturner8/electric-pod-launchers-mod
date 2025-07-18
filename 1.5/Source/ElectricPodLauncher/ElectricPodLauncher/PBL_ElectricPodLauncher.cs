@@ -21,13 +21,14 @@ namespace ElectricPodLauncher
 		//}
 
 
-		protected override void TickInterval(int delta)
+		public override void Tick()
 		{
+			//Debug.Log("Running 1.3");
 			float powerConsumption = this.TryGetComp<PBL_Chargeable>().PowerConsumption;
 			this.TryGetComp<CompPowerTrader>().PowerOutput = -1 * powerConsumption;
 			if (this.TryGetComp<CompPowerTrader>().PowerOn)
 			{
-				this.TryGetComp<CompRefuelable>().Refuel(chargePerTick * (powerConsumption / 1000 / 1000) * delta);
+				this.TryGetComp<CompRefuelable>().Refuel(chargePerTick * (powerConsumption / 1000 / 1000));
 			}
 		}
 		
